@@ -54,8 +54,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #0ef;
-    text-decoration: underline;
+    color: rgb(57, 186, 57);
+    /* text-decoration: underline; */
 }
 
 /*home*/
@@ -106,7 +106,7 @@ body {
 }
 
 .home-content h4 span {
-    color: #0ef;
+    color: rgb(57, 186, 57);
     font-size: 32px;
     font-weight: 700;
 }
@@ -123,10 +123,10 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid rgb(57, 186, 57);
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: rgb(57, 186, 57);
     text-decoration: none;
     margin: 30px 15px 30px 0;
     opacity: 0;
@@ -135,15 +135,15 @@ body {
 }
 
 .home-sci a:hover {
-    background: #0ef;
+    background: rgb(57, 186, 57);
     color: #000;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px rgb(57, 186, 57);
 }
 
 .btn-box {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: rgb(57, 186, 57);
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
@@ -157,13 +157,13 @@ body {
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px rgb(57, 186, 57), 0 0 25px rgb(57, 186, 57), 0 0 50pc rgb(57, 186, 57), 0 0 50px cyan, 0 0 90px cyan;
 }
 
 .img {
     display: inline-block;
     left: 55%;
-    bottom: 4%;
+    bottom: 3%;
     margin-right: 5%;
     padding: 0;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ body {
     max-height: 492px;
     border-radius: 90px;
     /*box-shadow: 0 0 5pc cyan, 0 0 5px cyan, 0 0 10px cyan;*/
-    border: #0ef 5px solid;
+    border: rgb(57, 186, 57) 5px solid;
 }
 
 .about-text {
@@ -229,7 +229,7 @@ body {
 }
 
 .about-text h2 span {
-    color: #0ef;
+    color: rgb(57, 186, 57);
 }
 
 .about-text p {
@@ -245,7 +245,7 @@ body {
 .abtbtn-box {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: rgb(57, 186, 57);
     border-radius: 40px;
     font-size: 15px;
     text-align: center;
@@ -256,7 +256,7 @@ body {
 }
 
 .abtbtn-box:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px rgb(57, 186, 57), 0 0 25px rgb(57, 186, 57), 0 0 50pc rgb(57, 186, 57), 0 0 50px cyan, 0 0 90px cyan;
 }
 
 
@@ -273,7 +273,7 @@ body {
 }
 
 .subtitle span {
-    color: #0ef;
+    color: rgb(57, 186, 57);
 }
 
 .sec {
@@ -344,7 +344,7 @@ body {
 
 .Technical-bars .bar .progress-line span {
     height: 100%;
-    background-color: #0ef;
+    background-color: rgb(57, 186, 57);
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
@@ -365,7 +365,15 @@ body {
 }
 
 .progress-line.MySQL span {
-    width: 70%;
+    width: 60%;
+}
+
+.progress-line.GIT span {
+    width: 60%;
+}
+
+.progress-line.BOOTSTRAP span {
+    width: 60%;
 }
 
 .progress-line.REACTJS span {
@@ -397,8 +405,20 @@ body {
     content: "70%";
 }
 
-.progress-line.MySQL span::after {
+.progress-line.javascript span::after {
     content: "70%";
+}
+
+.progress-line.MySQL span::after {
+    content: "60%";
+}
+
+.progress-line.GIT span::after {
+    content: "60%";
+}
+
+.progress-line.BOOTSTRAP span::after {
+    content: "60%";
 }
 
 .progress-line.REACTJS span::after {
@@ -429,6 +449,7 @@ body {
     align-items: flex-start;
 }
 
+
 .radial-bars .radial-bar {
     width: 50%;
     height: 170px;
@@ -457,7 +478,7 @@ body {
 
 .path {
     stroke-width: 10;
-    stroke: #0ef;
+    stroke: rgb(57, 186, 57);
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -524,7 +545,7 @@ body {
 }
 
 .main-text h2 span {
-    color: #0ef;
+    color: rgb(57, 186, 57);
 }
 
 .serv-container {
@@ -544,7 +565,25 @@ body {
 
 .row img {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
+    max-height: 300px;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+    padding: 10px;
+}
+
+.row1 {
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.row1 img {
+    width: 100%;
+    max-width: 350px;
     max-height: 300px;
     border-radius: 15px;
     display: block;
@@ -554,11 +593,11 @@ body {
 
 .layer {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     max-height: 300px;
     height: 0;
     opacity: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), #0ef);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgb(57, 186, 57));
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -589,7 +628,7 @@ body {
 }
 
 .layer i {
-    color: #0ef;
+    color: rgb(57, 186, 57);
     margin-top: 20px;
     font-size: 20px;
     background: #000;
@@ -609,6 +648,14 @@ body {
     height: 100%;
     opacity: 1;
 }
+.row1:hover img {
+    transform: scale(1.01);
+}
+
+.row1:hover .layer {
+    height: 100%;
+    opacity: 1;
+}
 
 /* Service*/
 
@@ -624,7 +671,7 @@ body {
 }
 
 .sub-title span {
-    color: #0ef;
+    color: rgb(57, 186, 57);
 }
 
 .prj-list {
@@ -643,7 +690,7 @@ body {
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
     /*box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;*/
-    border: #0ef 5px solid;
+    border: rgb(57, 186, 57) 5px solid;
 }
 
 .container {
@@ -673,7 +720,7 @@ body {
 .read {
     display: inline-block;
     padding: 12px 20px;
-    background: #0ef;
+    background: rgb(57, 186, 57);
     border-radius: 40px;
     font-size: 16px;
     color: #081b29;
@@ -686,7 +733,7 @@ body {
 }
 
 .read:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+    box-shadow: 0 0 5px rgb(57, 186, 57), 0 0 25px rgb(57, 186, 57), 0 0 50pc rgb(57, 186, 57), 0 0 50px cyan, 0 0 90px cyan;
 }
 
 .prj-list div:hover {
@@ -719,7 +766,7 @@ body {
 }
 
 .contact-text h2 span {
-    color: #0ef;
+    color: rgb(57, 186, 57);
 }
 
 .contact-text h4 {
@@ -748,7 +795,7 @@ body {
 
 .contact-list i {
     display: inline-block;
-    color: #0ef;
+    color: rgb(57, 186, 57);
     font-size: 20px;
     font-weight: 600;
     transition: all .40s ease;
@@ -763,19 +810,19 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid rgb(57, 186, 57);
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: rgb(57, 186, 57);
     text-decoration: none;
     margin: 0px 15px 0px 0;
     opacity: 1;
 }
 
 .contact-icons i:hover {
-    background: #0ef;
+    background: rgb(57, 186, 57);
     color: #000;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 20px rgb(57, 186, 57);
 }
 
 .last-text p{
@@ -803,15 +850,14 @@ body {
 
 .top i{
     color: black;
-    background: #0ef;
+    background: rgb(57, 186, 57);
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
 }
 
 .top i:hover {
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,0 0 200px cyan;
+    box-shadow: 0 0 5px rgb(57, 186, 57), 0 0 25px rgb(57, 186, 57), 0 0 50pc rgb(57, 186, 57), 0 0 50px cyan, 0 0 90px cyan;
 }
 
 
@@ -991,9 +1037,9 @@ body {
         font-weight: 200;
     }
     .img{
-        max-width: 400px;
+        max-width: 300px;
         position: relative;
-        left: -10%;
+        left: 10%;
         top: 2%;
         padding-bottom: 30px;
         padding-left: 0;
